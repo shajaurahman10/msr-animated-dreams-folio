@@ -30,12 +30,18 @@ const Hero = () => {
           ) : (
             <div className="animate-scale-in">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-                <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                  Mohammed Shajau Rahman
+                <span className="inline-block animate-bounce">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">M</span>ohammed
+                </span>{" "}
+                <span className="inline-block animate-bounce delay-300">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">S</span>hajau
+                </span>{" "}
+                <span className="inline-block animate-bounce delay-500">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">R</span>ahman
                 </span>
               </h1>
               <div className="text-xl md:text-2xl text-gray-300 animate-fade-in delay-500">
-                Full Stack Developer & Creative Designer
+                Creative Designer & AI Specialist
               </div>
             </div>
           )}
