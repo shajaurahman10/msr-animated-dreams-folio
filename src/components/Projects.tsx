@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, Github, Clock } from 'lucide-react';
+import { ExternalLink, Github, Clock, Eye } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "MSR Design Portfolio",
       description: "Showcasing creative design work and branding projects",
       image: "/lovable-uploads/7acf4acd-89cd-4902-b13e-09632bf7242b.png",
-      status: "Under Construction",
+      status: "Yet to Release",
       tech: ["React", "TypeScript", "Tailwind CSS"]
     },
     {
@@ -38,7 +38,13 @@ const Projects = () => {
   const getStatusBadge = (status: string) => {
     switch (status) {
       case "Live":
-        return <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Live</span>;
+        return <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
+          <Eye className="w-3 h-3" /> Live
+        </span>;
+      case "Yet to Release":
+        return <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
+          <Clock className="w-3 h-3" /> Yet to Release
+        </span>;
       case "Under Construction":
         return <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
           <Clock className="w-3 h-3" /> Under Construction
