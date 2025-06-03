@@ -11,6 +11,17 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleViewWork = () => {
+    const projectsSection = document.getElementById('projects');
+    projectsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleConnect = () => {
+    const subject = encodeURIComponent('Let\'s Collaborate - Project Inquiry');
+    const body = encodeURIComponent('Hi Mohammed,\n\nI\'m interested in discussing a potential project with you. I found your portfolio and would love to connect.\n\nBest regards');
+    window.location.href = `mailto:mohammedshajaurahman@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden">
       {/* Animated background elements */}
@@ -55,18 +66,18 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#projects" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
+              <button 
+                onClick={handleViewWork}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 cursor-pointer"
               >
                 View My Work
-              </a>
-              <a 
-                href="mailto:mohammedshajaurahman@gmail.com" 
-                className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105"
+              </button>
+              <button 
+                onClick={handleConnect}
+                className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105 cursor-pointer"
               >
                 Let's Connect
-              </a>
+              </button>
             </div>
           </div>
         )}
