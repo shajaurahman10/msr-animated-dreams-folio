@@ -29,15 +29,15 @@ const Hero = () => {
             </h1>
           ) : (
             <div className="animate-scale-in">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-                <span className="inline-block animate-bounce">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">M</span>ohammed
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 cursor-pointer hover:transform hover:scale-105 transition-transform duration-300">
+                <span className="hover:text-blue-400 transition-colors duration-300">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl">M</span>ohammed
                 </span>{" "}
-                <span className="inline-block animate-bounce delay-300">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">S</span>hajau
+                <span className="hover:text-blue-400 transition-colors duration-300">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl">S</span>hajau
                 </span>{" "}
-                <span className="inline-block animate-bounce delay-500">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl animate-pulse">R</span>ahman
+                <span className="hover:text-blue-400 transition-colors duration-300">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent text-6xl md:text-8xl">R</span>ahman
                 </span>
               </h1>
               <div className="text-xl md:text-2xl text-gray-300 animate-fade-in delay-500">
