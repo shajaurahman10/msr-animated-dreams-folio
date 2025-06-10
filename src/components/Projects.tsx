@@ -5,6 +5,14 @@ import { ExternalLink, Github, Clock, Eye } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: "Grozo - E-commerce Platform",
+      description: "A modern e-commerce platform with sleek design and seamless shopping experience",
+      image: "/lovable-uploads/4966e502-f703-4b83-9499-f14fbcf9edff.png",
+      status: "Live",
+      url: "https://grozo.vercel.app",
+      tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    },
+    {
       title: "Collzy - Educational Platform",
       description: "A modern educational platform built with React and Node.js",
       image: "/lovable-uploads/e0369a67-6847-4b7c-a6c5-01316bf3a561.png",
@@ -18,13 +26,6 @@ const Projects = () => {
       image: "/lovable-uploads/7acf4acd-89cd-4902-b13e-09632bf7242b.png",
       status: "Yet to Release",
       tech: ["React", "TypeScript", "Tailwind CSS"]
-    },
-    {
-      title: "Wedding Card Collections",
-      description: "Beautiful wedding invitation designs for special occasions",
-      image: "/lovable-uploads/aa86faf0-32a1-4316-aa68-e2652612be11.png",
-      status: "Ongoing",
-      tech: ["Canva", "Adobe Creative Suite", "Print Design"]
     },
     {
       title: "Brand Identity Projects",
